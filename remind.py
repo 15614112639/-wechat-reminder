@@ -1,11 +1,12 @@
-from wxpusher import WxPusher
+import requests
 
-APP_TOKEN = "AT_6xOCcOPd4vfVETlGAvcZ36jcTNCvLx3e"
-TOPIC_ID = 43605
+SEND_KEY = "你的SendKey"
 
-result = WxPusher.send_message(
-    content="⏰ 记得打卡！",
-    topic_ids=[TOPIC_ID],
-    token=APP_TOKEN
-)
-print(result)
+url = f"https://sctapi.ftqq.com/{SCT320719TkhUywucvOrY5IA1q3MXshnZU}.send"
+
+data = {
+    "title": "打卡提醒",
+    "desp": "⏰ 记得打卡！"
+}
+
+requests.post(url, data=data)
