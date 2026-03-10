@@ -2,8 +2,8 @@ name: Reminder
 
 on:
   schedule:
-    - cron: "25 0 * * 1-7"
-    - cron: "30 12 * * 1-7"
+    - cron: "25 0 * * *"
+    - cron: "30 12 * * *"
 
 jobs:
   run:
