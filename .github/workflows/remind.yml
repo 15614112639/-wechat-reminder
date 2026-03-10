@@ -3,7 +3,7 @@ name: Reminder
 on:
   schedule:
     - cron: "25 0 * * *"
-    - cron: "30 12 * * *"
+    - cron: "00 10 * * *"
 
 jobs:
   run:
