@@ -2,8 +2,8 @@ name: Reminder
 
 on:
   schedule:
-    - cron: "16 10 * * *"
-    - cron: "15 10 * * *"
+    - cron: "24 10 * * *"
+    - cron: "23 10 * * *"
   workflow_dispatch:
 
 jobs:
