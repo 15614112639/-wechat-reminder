@@ -1,11 +1,12 @@
 from wxpusher import WxPusher
-import datetime
 
 APP_TOKEN = "AT_6xOCcOPd4vfVETlGAvcZ36jcTNCvLx3e"
 UID = "UID_Jcp4BjUmmbHPzMjsXaO4gdgjoX8J"
 
+message = "⏰ 记得打卡！"
+
 WxPusher.send_message(
-    "⏰ 记得打卡！",
+    content=message,
     uids=[UID],
     token=APP_TOKEN
 )
