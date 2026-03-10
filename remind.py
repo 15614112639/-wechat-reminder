@@ -1,12 +1,10 @@
 from wxpusher import WxPusher
 
 APP_TOKEN = "AT_6xOCcOPd4vfVETlGAvcZ36jcTNCvLx3e"
-UID = "UID_Jcp4BjUmmbHPzMjsXaO4gdgjoX8J"
-
-message = "⏰ 记得打卡！"
+TOPIC_ID = 43605
 
 WxPusher.send_message(
-    content=message,
-    uids=[UID],
+    content="⏰ 记得打卡！",
+    topic_ids=[TOPIC_ID],
     token=APP_TOKEN
 )
