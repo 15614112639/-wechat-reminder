@@ -1,8 +1,8 @@
 import requests
 
-SEND_KEY = "你的SendKey"
+SEND_KEY = "SCT320719TkhUywucvOrY5IA1q3MXshnZU"
 
-url = f"https://sctapi.ftqq.com/{SCT320719TkhUywucvOrY5IA1q3MXshnZU}.send"
+url = f"https://sctapi.ftqq.com/{SEND_KEY}.send"
 
 data = {
     "title": "打卡提醒",
