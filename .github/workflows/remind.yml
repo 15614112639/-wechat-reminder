@@ -3,7 +3,7 @@ name: Reminder
 on:
   schedule:
     - cron: "25 0 * * *"
-    - cron: "0 10 * * *"
+    - cron: "05 10 * * *"
   workflow_dispatch:
 
 jobs:
